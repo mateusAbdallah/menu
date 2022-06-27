@@ -1,0 +1,1 @@
+Interactive menu with five sections: all, breakfast, lunch, shakes and dinner.
