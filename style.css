@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap');
 
 :root {
-    --gold: #c59d5f;
-    --ff-primary: "Montserrat", sans-serif;
+    --clr-gold: #c59d5f;
+    --ff-primary: "Montserrat", sans-serif;  
+    --radius: 0.5rem;  
 }
 
 * {
@@ -46,4 +47,11 @@ body {
     display: grid;
     max-width: 25rem;
     gap: 1rem 2rem;
+}
+
+.photo {
+    object-fit: cover;
+    height: 200px;
+    border: 0.25rem solid var(--clr-gold);
+    border-radius: var(--radius);
 }
