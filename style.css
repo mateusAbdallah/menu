@@ -2,6 +2,7 @@
 
 :root {
     --clr-gold: #c59d5f;
+    --clr-grey-5: hsl(210, 22%, 49%);
     --ff-primary: "Montserrat", sans-serif;  
     --radius: 0.5rem;  
 }
@@ -29,7 +30,7 @@ body {
 .underline {
     width: 5rem;
     height: 0.25rem;
-    background: var(--gold);
+    background: var(--clr-gold);
     margin-left: auto;
     margin-right: auto;
 }
@@ -55,4 +56,26 @@ body {
     width: 400px;
     border: 0.25rem solid var(--clr-gold);
     border-radius: var(--radius);
+}
+
+.item-info header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px dotted var(--clr-grey-5);
+}
+
+.item-info h4 {
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    color: var(--clr-gold);
+}
+
+@media screen and (min-width: 1024px){
+    .menu-item {
+        grid-template-columns: 1fr 1fr;
+        gap: 0 1.25rem;
+        max-width: 40rem;
+    }
 }
