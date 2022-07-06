@@ -5,6 +5,7 @@
     --clr-grey-5: hsl(210, 22%, 49%);
     --ff-primary: "Montserrat", sans-serif;  
     --radius: 0.5rem;  
+    --transition: all 0.3s linear;
 }
 
 * {
@@ -39,6 +40,24 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 4.5rem;
+}
+
+.filter-btn {
+    background: transparent;
+    border-color: var(--clr-gold);
+    color: var(--clr-gold);
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 10px;   
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.filter-btn:hover {
+    cursor: pointer;
+    background: var(--clr-gold);
+    color: #ffff;
 }
 
 .section-center {
