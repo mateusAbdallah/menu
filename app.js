@@ -104,6 +104,12 @@ window.addEventListener("DOMContentLoaded", function(){
     displayMenuItems(menu);
 })
 
+filterBtns.forEach(function(btn){
+    btn.addEventListener("click", function(e){
+        console.log(e.currentTarget.dataset.id)
+    })
+})
+
 function displayMenuItems(menuItems){
     let displayMenu = menuItems.map(function(item){
         return `<article class="menu-item">
