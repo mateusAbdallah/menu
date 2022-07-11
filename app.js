@@ -112,7 +112,7 @@ filterBtns.forEach(function(btn){
                 return menuItems;
             }
         });
-        if (category === "all"){
+        if (category === "All"){
             displayMenuItems(menu);
         }
         else {
