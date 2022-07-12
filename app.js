@@ -102,6 +102,10 @@ const filterBtns = document.querySelectorAll(".filter-btn");
 
 window.addEventListener("DOMContentLoaded", function(){
     displayMenuItems(menu);
+    const categories = menu.map(function(item){
+        return item.category;
+    })
+    console.log(categories);
 })
 
 filterBtns.forEach(function(btn){
